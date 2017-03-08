@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Planer.Models.Planer>
+@{
+    Layout = null;
+}
+
+<table class="table">
+    <tr>
+        <th>
+            Название
+        </th>
+        <th>
+            Описание
+        </th>
+        <th>
+            Сортировка
+        </th>
+    </tr>
+    @foreach (var task in Model)
+    {
+        <tr>
+            <td class="jsTitle">
+                <span>@task.Title</span>
+            </td>
+            <td class="jsDescription">
+                <span>@task.Description</span>
+            </td>
+            <td class="jsSort">
+                <span>@task.Sort</span>
+            </td>
+            <td class="buttons">
+                <span class="btn edit_bt taskEditJs" data-delete-url="/Home/Update" data-task-id="@task.Id">Изменить</span>
+                <span class="btn remove_bt taskRemoveJs" data-delete-url="/Home/Delete" data-task-id="@task.Id">Удалить</span>
+            </td>
+        </tr>
+    }
+</table>
+

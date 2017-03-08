@@ -1,0 +1,111 @@
+﻿.tasks_area{
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.form_container{
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.2s;
+}
+.btn-defaul{
+    background: #6a79b1;
+    color: #fff;
+    margin: 10px 10px 10px 0px;
+}
+.btn-defaul:hover{
+
+}
+.input-group textarea{
+    resize: none;
+    height: 100px;   
+}
+
+.input-group{
+    width:100%;
+}
+
+.input-group label{
+    width:100%;
+}
+.input-group label input{
+    width:100%;
+} 
+.input-group input{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.remove_bt, .edit_bt {
+    background: #d4d4d4;
+    padding: 3px 10px;
+    color: #775151;
+    font-size: 13px;
+}
+.remove_bt:hover{
+    border: 1px solid red;
+    background: #fff;
+    color: #000000;
+}
+.edit_bt:hover{
+    border: 1px solid #468c5f;
+    background: #fff;
+    color: #000000;
+}
+.btn{
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+.tasks_area .buttons{
+    text-align:right;
+    width: 176px; 
+}
+.input-group.sort input{
+    width: 86px;
+}
+.form_container{
+    margin-top: 20px;
+
+}
+.form_container.open{
+    height: 300px;
+    
+}
+.form-control.edit_title{
+    display: inline-block;
+    width: 18%;
+}
+.form-control.edit_description{
+   resize:none;
+    display: inline-block;
+    width: 55%;
+}
+.form-control.edit_sort{
+    display: inline-block;
+    width: 7%;
+}
+.btn.edit_task{
+    border: 1px solid #4aa551;
+    background: #ace4b6;
+}
+
+.btn.cancel_edit_task{
+    border: 1px solid #2e4c8e;
+    background: #e6f0ff;
+}
+.btn.cancel_edit_task:hover{
+    background: #c2d7f7;
+}
+.btn.edit_task:hover{
+    background: #5bb16b;
+}
+.edit_form_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.required.error{
+    border: 1px solid red;
+}

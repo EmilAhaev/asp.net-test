@@ -1,0 +1,15 @@
+﻿
+@{
+    Layout = null;
+}
+
+<td colspan="4" class="edit_form">
+    <form action="/Home/Update" class="edit_form_container">
+        <input  class="form-control edit_title required" type="text" name="title" value="@ViewBag.Title" />
+        <textarea class="form-control edit_description" name="description">@ViewBag.Description</textarea>
+        <input class="form-control edit_sort required" type="number" name="sort" value="@ViewBag.Sort"/>
+        <input type="hidden" name="id" value="@ViewBag.Id" />
+        <span class="cancelJs btn cancel_edit_task">Отмена</span>
+        <span class="submitJs btn edit_task">Сохранить</span>
+    </form>
+<td>
